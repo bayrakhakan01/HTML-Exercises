@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header, main {
+            margin: 1rem 2rem;
+        }
+
+        ul {
+            list-style-position: outside;
+            list-style-type:circle;
+            outline: 1px solid red  ;
+            margin: 1rem;
+        }
+        ol {
+            list-style-position: inside;
+            list-style-type:upper-roman;
+            outline: 1px solid red;
+            margin: 1rem;
+        }
+        ol ol {
+             list-style-type: lower-roman;
+         }
+        dl {
+            list-style-position: outside;
+            outline: 1px solid red;
+            margin: 1rem;
+        }
+
+        dt {
+            font-weight: 700;
+        }
+
+        dd {
+            text-indent: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Lists</h1>
+    </header>
+    <main>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <ol>
+            <li>item A
+                <ol>
+                <li>sub item</li>
+                <li>sub item</li>
+                <li>sub item</li>
+                </ol>
+            </li>
+            
+            <li>item B</li>
+            <li>item C</li>
+        </ol>
+        <dl>
+            <dt>Dictionary Term</dt>
+            <dd>Dictionary Definition</dd>
+            <dt>Archer</dt>
+            <dd>Sterling Archer, son of Malory Archer, world-renowned spy.</dd>
+        </dl>
+    </main>
+</body>
+</html>

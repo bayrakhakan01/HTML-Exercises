@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ilk HTML Sayfam</title>
+    </head>
+    <body>
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TPtSH1XOWYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form action="" method="GET" enctype="multipart/form-data">
+           <label for="dosya">dosya sec </label>
+            <input id="dosya" type="file" name="dosya[]" multiple accept="image/*">
+            <label for="ay">kullanici adi</label>
+            <input placeholder="hullanici adi" required id="ay" type="text">
+            <input type="password">
+            <label>
+                <input type="checkbox"> kurallari kabul ediyorum
+            </label><br>
+            <label for="">
+                <input type="radio" name="cins" checked value="er">Erkek
+            </label>
+            <label for="">
+                <input type="radio" name="cins" value="ka">Kadin
+            </label>
+            <fieldset>
+                <input type="submit" value="Gonder baby">
+                <input type="reset" value="sifirla">
+                <br><br><br>
+                <input type="color">    <br>
+                <input type="date"> <br>
+                <input type="datetime"><br>
+                <input type="month"><br>
+                <input type="week"><br>
+                <input type="email">    <br>
+                <input type="number" min="5" max="15"><br>
+                <input type="range" min="5" max="15" step="2"><br>
+                <input type="search" autofocus>
+                <input type="tel">
+                <input type="time"> 
+                <input type="url">
+            </fieldset>
+            <input type="text" name="codeI" autocomplete="off"><br>
+            <input list="diller"> 
+            <datalist id="diller">
+                <option value="HTML">   </option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+            </datalist><br><br>
+
+            <!--
+                butonlar
+            -->
+            <select name="dil[]" id="aa" multiple size="2" >
+                <optgroup>
+                    <option value="css">CSS</option>
+                    <option value="HTML">HTML   </option>
+                    <option value="JS">JS</option>
+                </optgroup>
+            </select>
+            <select name="dil" id="ssaa" size="5" >
+                <optgroup label="front-end dilleri"> 
+                    <option value="css">CSS</option>
+                    <option value="HTML">HTML   </option>
+                    <option value="JS">JS</option>
+                </optgroup>
+                <optgroup label="back-end dilleri">
+                    <option value="php">php</option>
+                    <option value="js">JS   </option>
+                    <option value="Python">Python</option>
+                </optgroup>
+            </select>
+            <textarea name="text" id="asfd" cols="30" rows="10"></textarea>
+            <button type="submit">Gonder</button>
+
+        </form>
+
+    </body>
+</html>
